@@ -211,7 +211,7 @@ def main():
 
     # Crawl the AJAX from 2nd page（page start from 1）
     page = 1
-    max_page = 3  # Change this to the desired maximum page number
+    max_page = 20  # Change this to the desired maximum page number
     while page < max_page:
         ajax_links = fetch_food_recall_links_ajax(page)
         if not ajax_links:
