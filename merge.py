@@ -70,7 +70,7 @@ for api_recall in api_recalls:
         recall_score = len(common_keywords) * 10  # 10 points for each matched keywords
 
         # total match score
-        total_score = company_score * 0.4 + product_score * 0.4 + recall_score * 0.2  # 赋予不同权重
+        total_score = company_score * 0.4 + product_score * 0.4 + recall_score * 0.2
 
         # Best match
         if total_score > best_score and total_score >= 70:  # Here I set as score as 70, you can modify this if you'd like to get higher accuracy
